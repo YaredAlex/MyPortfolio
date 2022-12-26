@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+.App {
+  text-align: center;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+body::-webkit-scrollbar{
+  width: 3px;
+  background-color: azure;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: rgba(20, 30, 20, 1);
+}
+.img-div{
+  margin-left: 40%;
+  margin-top:100px;
+  width: auto;
+}
+input{
+  background-color: rgb(236, 236, 236);
+  border: none;
+  outline: none;
+  padding: 5px 2px;
+  height: 30px;
+}
+input:active{
+  background-color: #ccc;
+  color: white;
+}
+textarea{
+  outline: none;
+  max-width: 300px;
+  margin-right: 10px;
+  height: 50px;
+  border-radius: 5px;
+}
+.skill-set::-webkit-scrollbar{
+  width: 3px;
+  height: 3px;
+}
+.skill-set::-webkit-scrollbar-thumb{
+  background-color: #ccc;
+}
+.skill-set >:first-child{
+  margin-left: 300px !important;
+}
+.service div ul{
+  list-style-type: none;
+  margin-inline-start: 2px;
+  padding-inline-start: 2px;
+}
+.service div ul li{
+  padding: 4px 5px;
+  
+}
+.service div div{
+  transition: 0.2s all ease-in-out;
+}
+.service div:hover,.skill-set div {
+  transform: scale(1.01);
+}
+.service div h4{
+
+}
+
+@media screen and (max-width:576px) {
+  
+  
+  .skill-set >:first-child{
+    margin-left: 490px !important;
+  }
+}
+@media screen and (max-width:900px) {
+  .links{
+    position: absolute !important;
+    top: 190px !important;
+
+  }
+  .message{
+    position: relative !important;
+    top: 0 !important;
+    margin: 10px auto 0;
+    left:20px !important;
+  }
+  .img-div{
+    margin: 50px auto 0 !important;
+    max-width:400px;
+    padding-left: 0;
+  }
+  
+}
