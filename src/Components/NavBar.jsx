@@ -43,7 +43,7 @@ const NavBar =({modeToggle,mode})=>{
             Resume
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a className="dropdown-item" download href="./resume.docx">downloadResume</a></li>
+            <li><a className="dropdown-item" download href="./yared_resume.docx">downloadResume</a></li>
             
           </ul>
         </li>

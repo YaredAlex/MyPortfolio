@@ -1,6 +1,6 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
-import {faFacebook,faTwitter,faLinkedin,faInstagram} from '@fortawesome/free-brands-svg-icons'
+import {faFacebook,faTwitter,faLinkedin,faInstagram, faGithub} from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom'
 import { useContext, useEffect } from 'react'
 import { Wrapper } from '../App'
@@ -8,6 +8,7 @@ import Skill from './Skill'
 import Contact from './Contact'
 import Service from './Service'
 import About from './About'
+import Projectes from './Projects'
 const Home = ()=>{
   
    const mode = useContext(Wrapper);
@@ -16,20 +17,19 @@ const Home = ()=>{
       <div className='position-relative overflow-hidden mb-5' style={{marginTop:"60px"}} id="home">
          <div className='col row justify-content-start flex-column  gap-4 position-fixed links'
               style={{top:"250px",left:"50px"}} >
-            <Link className='w-auto'>
-            <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
-            </Link>
-         <Link className='w-auto'><FontAwesomeIcon icon={faFacebook} ></FontAwesomeIcon></Link>
-         <Link className='w-auto'><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></Link>
-         <Link className='w-auto'><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></Link>
+            <a href='https://' target="_blank" className='w-auto nav-link nav-link text-primary'><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon></a>
+            <a href='https://github.com/YaredAlex' target="_blank" className='w-auto nav-link nav-link text-primary'><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></a>
+         {/* <a href='https://' className='w-auto nav-link text-primary'><FontAwesomeIcon icon={faFacebook} ></FontAwesomeIcon></a> */}
+         <a href='https://linkedin.com/in/yaredalemayehukebede' target="_blank" className='w-auto nav-link text-primary'><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></a>
+         {/* <a href='https://' className='w-auto nav-link text-primary'><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a> */}
          </div>
         
          {/*Image of user  */}
          
             
-            <div className={` img-div mt-100px` }>
-               <img src='./img.jpg' 
-            style={{width:"400px",backgroundColor:"white"}} className="rounded"/></div>
+            <div className={` img-div` }>
+               <img src='./img2.png' 
+            style={{width:"400px"}} className="rounded"/></div>
             
         
           {/*Description    */}
@@ -37,7 +37,7 @@ const Home = ()=>{
                                                      top:"210px",
                                                      left:"100px"
                                                      }}>
-               <h1>Hello I am <span className='text-warning'>HANA</span></h1>
+               <h1>Hello I am <span className='text-warning'>YARED</span></h1>
                <h5>I am a <span className='text-warning'>developer</span> and
                <span className='text-warning'> designer</span></h5>
                <h5 className='text-muted'>I create a stunning website
@@ -45,6 +45,7 @@ const Home = ()=>{
          </div>
       </div>
       <Service/>
+      <Projectes/>
       <Skill/>
       <About/>
       <Contact />

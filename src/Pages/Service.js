@@ -74,6 +74,14 @@ const Service =()=>{
                         <span style={spanStyle}><FontAwesomeIcon icon={faCheck} /></span>
                             Implement specification onto websites that are inline with client needs
                         </li>
+                        <li>
+                        <span style={spanStyle}><FontAwesomeIcon icon={faCheck} /></span>
+                            Optimize web applications for maximum speed
+                        </li>
+                        <li>
+                        <span style={spanStyle}><FontAwesomeIcon icon={faCheck} /></span>
+                           Design mobile-based feature
+                        </li>
                      </ul>
                  </div>
              </div>

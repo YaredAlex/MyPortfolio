@@ -13,9 +13,16 @@ body::-webkit-scrollbar-thumb{
   background-color: rgba(20, 30, 20, 1);
 }
 .img-div{
-  margin-left: 40%;
-  margin-top:100px;
+  margin-left: 50%;
+  margin-top:10px;
   width: auto;
+  height: 90vh;
+ 
+  background-size: cover;
+  
+}
+.img-div img{
+margin-top: -30px;
 }
 input{
   background-color: rgb(236, 236, 236);
@@ -80,11 +87,11 @@ textarea{
   .message{
     position: relative !important;
     top: 0 !important;
-    margin: 10px auto 0;
+    margin: 50px auto 0;
     left:20px !important;
   }
   .img-div{
-    margin: 50px auto 0 !important;
+    margin: 0 auto  !important;
     max-width:400px;
     padding-left: 0;
   }
